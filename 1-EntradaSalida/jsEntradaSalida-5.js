@@ -8,8 +8,8 @@ function Mostar()
     var resultado
     nombre=document.getElementById("elNombre").value;
     edad=document.getElementById("laEdad").value;
-    unir=parseInt("elNombre" + "laEdad").value;
-    resultado=alert ("usted se llama" + nombre)
+    unir=parseInt("elNombre" && "laEdad").value;
+    resultado=alert ("Usted se llama " + nombre && "Tiene " + edad);
 
 }
 
