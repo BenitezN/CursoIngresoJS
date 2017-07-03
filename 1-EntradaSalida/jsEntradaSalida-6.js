@@ -8,7 +8,9 @@ var Num2
 var resultado
 Num1=document.getElementById("numeroUno").value;
 Num2=document.getElementById("numeroDos").value;
-resultado=parseInt(Num1 + Num2);
-alert("la suma es" + resultado);
+Num1=parseInt(Num1);
+Num2=parseInt(Num2);
+resultado=Num1 + Num2
+alert("la suma es " + resultado);
 }
 
