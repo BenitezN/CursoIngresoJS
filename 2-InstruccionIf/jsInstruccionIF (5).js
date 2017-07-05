@@ -9,6 +9,5 @@ if(edad >= 18)
     alert("Usted no es adolescente");
 }
 else
-{
-}
+{}
 }//FIN DE LA FUNCIÓN

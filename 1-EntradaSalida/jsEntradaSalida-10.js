@@ -5,8 +5,8 @@ en el cuadro de texto "RESULTADO"*/
 function MostrarAumento()
 {
 	var aumento
-	Num1=document.getElementById("sueldo").value;
-    Num2=document.getElementById("resultado").value;
-    Num1=parseInt(Num1);
-    Num2=parseInt(Num2);
+    var precio
+    precio=document.getElementById("sueldo").value;
+    precio=parseInt(precio);
+    aumento=(precio * 0,75)
 }
