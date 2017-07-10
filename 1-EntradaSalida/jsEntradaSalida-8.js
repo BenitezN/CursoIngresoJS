@@ -9,6 +9,6 @@ function SacarResto()
     Num2=document.getElementById("numeroDivisor").value;
     Num1=parseInt(Num1);
     Num2=parseInt(Num2);
-    resto=Num1 % Num2
+    resto=Num1 % Num2//%saca el resto, / divide
     alert("El resto da " + resto);
 }

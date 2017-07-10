@@ -29,11 +29,24 @@ largoterreno=parseInt(largoterreno);
 anchoterreno=parseInt(anchoterreno);
 radioterreno=parseInt(radioterreno);
 Circuloalambre=Math.PI *(radioterreno*radioterreno)//radio=pi *radio al cuadrado(radio*radio)
-resultado=Circuloalambre*3//* 3 (hilos)
+resultado=Circuloalambre *3//* 3 (hilos)
 resultado=parseInt(resultado);//redondea numero con coma a entero
 alert("Resultado: "+ resultado);
 }
 function Materiales () 
 {
-	
+var materiales
+var cal
+var cemento 
+largoterreno=document.getElementById("Largo").value;
+anchoterreno=document.getElementById("Ancho").value;
+radioterreno=document.getElementById("Radio").value;
+largoterreno=parseInt(largoterreno);
+anchoterreno=parseInt(anchoterreno);
+radioterreno=parseInt(radioterreno);
+materiales=(largoterreno *2) + (anchoterreno * 2)//sumas los lados
+cal=materiales*3//por cada metro necesitas 3 bolsas de cal
+cemento=materiales*2//por cada metro necesitas 2 bolsas de cemento
+alert("Se necesitan " + cal + " bolsas de cal y " + cemento + " bolsas de cemento");
+
 }

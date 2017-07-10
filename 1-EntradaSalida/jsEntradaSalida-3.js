@@ -3,9 +3,8 @@ y luego mostrarlo por 'Alert' al presionar el botón  'MOSTRAR'*/
 function Mostar()
 {
 	var nombre;
-    var respuesta;
-    nombre=document.getElementById("elNombre").value;
-    respuesta=alert(nombre)
+    nombre=document.getElementById("elNombre").value;//entre parentesis el id del html
+    alert(nombre)
 
 }
 

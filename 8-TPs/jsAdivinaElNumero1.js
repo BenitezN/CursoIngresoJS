@@ -32,11 +32,11 @@ else//se toma los errores en else
 {
 if(numerousuario < numerosecreto)//numero del usuario es menor a numero secreto
 {
- alert("Le falta y van "+contador+ " intentos"); 
+ alert("Le falta para el numero y van "+contador+ " intentos"); 
 } 
 else
 {
-  alert("Se paso y van "+contador+ " intentos");
+  alert("Se paso del numero y van "+contador+ " intentos");
 }	
 }	
 }

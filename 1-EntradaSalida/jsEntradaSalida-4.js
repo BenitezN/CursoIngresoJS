@@ -5,10 +5,9 @@
 function Mostar()
 {
 	var mensaje;
-	var text;
 	mensaje=prompt("Ingrese su mensaje:");
-	prompt=document.getElementById("elNombre").value;
-	text=document.getElementById("Su nombre").value;
+	document.getElementById("elNombre").value=mensaje;//entre parentesis el id del html
+	//todo es igual a el mensaje para que me lo tome en el espacio en blanco
 	
 }
 

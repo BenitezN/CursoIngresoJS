@@ -8,8 +8,8 @@ function MostrarAumento()
     var cuenta
     porciento=10;
     sueldo=document.getElementById("sueldo").value;
-    sueldo=parseInt(sueldo);
-    cuenta=(sueldo* porciento)/100;
-    aumento=sueldo + cuenta;
+    sueldo=parseInt(sueldo);//si quiero sacar una cuenta siempre parsear para tranformar la variable en numeros enteros
+    cuenta=(sueldo* porciento)/100;//para el aumento se multiplica el numero por el % y se divide todo por 100 
+    aumento=sueldo + cuenta;//se suma el resultado anterior por el numero de nuevo
     document.getElementById("resultado").value=aumento;
 }
