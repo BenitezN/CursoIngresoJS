@@ -9,17 +9,17 @@ function Mostrar()
 {
     numero=parseInt(numero);
 	numero=prompt("Ingrese 5 números"); 
-	while(isNaN(numero))
+	console.log(numero);
+	while(!(numero>=0 || numero <=0))//significado de isNan?
 	{
-		numero=prompt("Ingrese solo un número");
 		numero=parseInt(numero);
+		numero=prompt("Ingrese solo un número");
 	}
+	  acumulalor=acumulador + numero;
 	  contador++;//es igual a contador 1
-	  console.log(numero);
-	  acumulador=acumulador + numero;
 }
 
 document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
+document.getElementById('promedio').value=acumulador/5;
 
 }//FIN DE LA FUNCIÓN

@@ -3,7 +3,7 @@ function Mostrar()
 
 var sexo 
 sexo=prompt("ingrese f ó m .");
-while(sexo != "m" && sexo !="f")
+while(sexo !="f" && sexo !="m") //porque && y no ||?
 {
     alert=prompt("ingrese f ó m .");
 }
