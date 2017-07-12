@@ -8,7 +8,57 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
+var preciolamparas=35;
+var cantidad=document.getElementById("Cantidad").value;
+cantidad=parseInt(cantidad);
 function CalcularPrecio () 
 {
- 	
+switch(cantidad)
+{
+    case "ArgentinaLuz"://case 1
+    if(cantidad ==5)
+    {
+    preciodescuentoal5=((cantidad * preciolamparas) * 40/ 100) + preciolamparas;
+    document.getElementById("precioDescuento").value=preciodescuentoal5;
+    }
+    else if(cantidad==4)
+    {
+    preciodescuentoal4=((cantidad * preciolamparas) * 25/ 100) + preciolamparas;
+    document.getElementById("precioDescuento").value=preciodescuentoal4;
+    }
+    else if(cantidad==3)
+    {
+    preciodescuentoal3=((cantidad * preciolamparas) * 15/ 100) + preciolamparas;
+    document.getElementById("precioDescuento").value=preciodescuentofl3;
+    }
+    break;
+    /////////////////////////////////////////////////////////////////////////////
+    case "FelipeLamparas"://case 2
+    if(cantidad ==4)
+    {
+    preciodescuentofl4=((cantidad * preciolamparas) * 25/ 100) + preciolamparas;
+    document.getElementById("precioDescuento").value=preciodescuentofl4;
+    }
+    else if(cantidad ==3)
+    {
+    preciodescuentofl3=((cantidad * preciolamparas) * 10/ 100) + preciolamparas;   
+    }
+    break;
+    /////////////////////////////////////////////////////////////////////////////
+    default://demas marcas
+    if(cantidad ==5)
+    {
+    descuentootras5=((cantidad * preciolamparas) * 30/ 100) + preciolamparas;
+    }
+    else if(cantidad==4)
+    {
+    descuentootras4=((cantidad * preciolamparas) * 20/ 100) + preciolamparas;
+    }
+    else if(cantidad==3)
+    {
+    descuentootras3=((cantidad * preciolamparas) * 5/ 100) + preciolamparas;  
+    }
+    }
+    
+
 }

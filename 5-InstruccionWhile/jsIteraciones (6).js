@@ -10,7 +10,7 @@ function Mostrar()
     numero=parseInt(numero);
 	numero=prompt("Ingrese 5 números"); 
 	console.log(numero);
-	while(!(numero>=0 || numero <=0))//significado de isNan?
+	while(isNaN(numero))//si no hay un numero me lo toma como falso y ingresa de nuevo al while 
 	{
 		numero=parseInt(numero);
 		numero=prompt("Ingrese solo un número");
