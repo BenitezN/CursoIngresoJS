@@ -5,16 +5,19 @@ function Mostrar()
 var numero;
 var maximo,minimo;
 var respuesta=true;
-var primera=true;
-while(isNaN(numero))
+var flag=true;
+while(respuesta==true)
 {
-	 numero=parseInt(prompt("Ingrese los números"))
-	   
-if(primera) 
+	 numero=parseInt(prompt("Ingrese números"));
+	 while(isNaN(numero))
+	 { 
+		 numero=parseInt(prompt("Ingrese solo números"));
+	 }
+if(flag==true) 
 {
  maximo=numero;
  minimo=numero;
- primera=false;
+ flag=false;//o cero
 }
 else
 {
@@ -29,8 +32,10 @@ if(numero>maximo)
  maximo=numero;	
 }
 else
-{}
+{	
 }
+}
+respuesta=confirm("Desea seguir ingresando números?");
 }
 document.getElementById("maximo").value=maximo;
 document.getElementById("minimo").value=minimo;

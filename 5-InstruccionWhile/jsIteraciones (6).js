@@ -7,15 +7,13 @@ function Mostrar()
 	
 	while(contador<5)
 {
-    numero=parseInt(numero);
-	numero=prompt("Ingrese 5 números"); 
+    numero=parseInt(prompt("Ingrese 5 números")); 
 	console.log(numero);
 	while(isNaN(numero))//si no hay un numero me lo toma como falso y ingresa de nuevo al while 
 	{
-		numero=parseInt(numero);
-		numero=prompt("Ingrese solo un número");
+		numero=parseInt(prompt("Ingrese solo un número"));
 	}
-	  acumulalor=acumulador + numero;
+	  acumulador=acumulador + numero;
 	  contador++;//es igual a contador 1
 }
 
