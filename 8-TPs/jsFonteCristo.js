@@ -9,5 +9,47 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 function ComenzarIngreso () 
 {
- 	
+//no se agrega nada 
+}
+function NumerosPares()
+{
+var numeropositivo=document.getElementById("numero").value;
+numeropositivo=parseInt(numeropositivo)
+var contadorpares;
+if(numeropos<1)
+{
+   alert("Ingrese número par"); 
+}
+else
+{
+for(i=1;i=numeropos; i++)
+{
+if(i%2==0)
+{
+contadorpares++;
+}
+}
+}
+alert("Cantidad de números pares: " + contadorpares);
+}
+
+function NumerosImpares()
+{
+
+}
+
+function NumerosDivisibles()
+{
+
+}
+
+function VerficarPrimo()
+{
+
+}
+
+function NumerosPrimos()
+{
+
+
 }

@@ -8,8 +8,6 @@ var eleccionMaquina;
 var random=parseInt(Math.random()*(4-1))+1;//math random (max-min)+min
 function comenzar()
 {
-	
-
 
 }//FIN DE LA FUNCIÓN
 function piedra()
@@ -17,14 +15,14 @@ function piedra()
 switch(random)
 {
     case 1:
-    alert("Pierde");
+    alert("Empate");
     break;
     case 2:
-    alert("Empate");
+    alert("Pierde");
     break;
     case 3:
     alert("Gana");
-    	
+}
 
 }//FIN DE LA FUNCIÓN
 function papel()
@@ -32,13 +30,13 @@ function papel()
 switch(random)
 {
     case 1:
-    alert("Pierde");
+    alert("Gana");
     break;
     case 2:
     alert("Empate");
     break;
     case 3:
-    alert("Gana");
+    alert("Pierde");
     break;
 }
 
@@ -51,10 +49,10 @@ switch(random)
     alert("Pierde");
     break;
     case 2:
-    alert("Empate");
+    alert("Gana");
     break;
     case 3:
-    alert("Gana");
+    alert("Empate");
 }	
-}
+
 }//FIN DE LA FUNCIÓN
