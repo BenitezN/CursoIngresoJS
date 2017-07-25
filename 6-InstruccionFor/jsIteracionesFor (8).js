@@ -10,7 +10,7 @@ primo=false
 break;     
 }
 }
-if(primo==true)
+if(primo==false)
 {
 alert("El número ingresado no es primo")
 }
